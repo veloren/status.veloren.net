@@ -1,26 +1,37 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: veloren # Your GitHub organization or username, where this repository lives
+repo: status.veloren.net # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Game Server
+    check: "tcp-ping"
+    url: server.veloren.net
+    port: 14004
+  - name: Website
+    url: https://veloren.net
+  - name: Auth
+    url: https://auth.veloren.net/ping
+  - name: Book
+    url: https://book.veloren.net
+  - name: Wiki
+    url: https://wiki.veloren.net
+  - name: Grafana
+    url: https://grafana.veloren.net
+  - name: CDN
+    url: https://download.veloren.net
+  # - name: Docs
+  #   url: https://docs.veloren.net
+
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
+  cname: status.veloren.net
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  logoUrl: https://avatars.githubusercontent.com/u/39637074
+  name: Veloren Status
+  introTitle: Veloren Status
+  introMessage: "This is the status page for all of Veloren's services"
   navbar:
     - title: Status
       href: /
@@ -29,3 +40,16 @@ status-website:
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
+
+assignees:
+  - AngelOnFira
+  - xMAC94x
+
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+  uptime: "*/1 * * * *"
