@@ -58,19 +58,19 @@
     "url": "https://book.veloren.net",
     "icon": "https://favicons.githubusercontent.com/book.veloren.net",
     "slug": "book",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 683,
-    "timeDay": 434,
-    "timeWeek": 645,
-    "timeMonth": 683,
-    "timeYear": 683,
+    "status": "up",
+    "uptime": "99.93%",
+    "uptimeDay": "98.90%",
+    "uptimeWeek": "99.84%",
+    "uptimeMonth": "99.93%",
+    "uptimeYear": "99.93%",
+    "time": 668,
+    "timeDay": 406,
+    "timeWeek": 612,
+    "timeMonth": 668,
+    "timeYear": 668,
     "dailyMinutesDown": {
-      "2021-11-22": 0
+      "2021-11-22": 16
     }
   },
   {
